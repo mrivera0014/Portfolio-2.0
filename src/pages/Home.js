@@ -1,13 +1,20 @@
 import React from 'react'
+import Row from '../components/Row/Row'
+import Column from '../components/Column/Column'
+import Card from '../components/Card/Card'
+
 
 function Home() {
 
-    //create state
-
     return (
-        <div>
-            <h1>Hello from home page</h1>
-        </div>
+        <>
+            <Row>
+                <Column xs={12} >
+                    <Card />
+                </Column>
+            </Row>
+
+        </>
     )
 }
 
