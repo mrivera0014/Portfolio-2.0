@@ -1,11 +1,16 @@
 import React from 'react'
+import Row from 'react-bootstrap/esm/Row'
+import Resume from '../components/Resume/Resume'
 
-function Resume() {
+function ResumeLink() {
     return (
-        <div>
-            <h1>Resume Page</h1>
-        </div>
+        <>
+            <Row>
+                <h1>Resume Page</h1>
+                <Resume />
+            </Row>
+        </>
     )
 }
 
-export default Resume
+export default ResumeLink
