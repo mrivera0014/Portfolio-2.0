@@ -13,14 +13,14 @@ function App() {
       <Nav />
 
       <Switch>
-        <Route exact path={"/"} component={Home}></Route>
+        <Route exact path={process.env.PUBLIC_URL + "/"} component={Home}></Route>
 
-        <Route exact path={"/projects"} component={Projects}></Route>
+        <Route exact path={process.env.PUBLIC_URL + "/projects"} component={Projects}></Route>
 
-        <Route exact path={"/contact"} component={Contact}></Route>
+        <Route exact path={process.env.PUBLIC_URL + "/contact"} component={Contact}></Route>
 
-        <Route exact path={"/resume"} component={Resume}></Route>
-        <Route exact path={"*"} component={notFound} />
+        <Route exact path={process.env.PUBLIC_URL + "/resume"} component={Resume}></Route>
+        <Route exact path={process.env.PUBLIC_URL + "*"} component={notFound} />
       </Switch>
       <Footer />
     </Router>
