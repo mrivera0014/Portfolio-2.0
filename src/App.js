@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, hashHistory } from 'react-router-dom'
 import Nav from './components/Nav/Nav'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer'
 
 function App() {
   return (
-    <Router>
+    <Router history={hashHistory}>
       <Nav />
 
       <Switch>
@@ -20,7 +20,7 @@ function App() {
         <Route exact path={"/contact"} component={Contact}></Route>
 
         <Route exact path={"/resume"} component={Resume}></Route>
-
+        <Route exact path={"*"} component={notFound} />
       </Switch>
       <Footer />
     </Router>
