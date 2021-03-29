@@ -23,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://mrivera0014.github.io/portfolio-2.0",
+  "homepage": ".",
   "eslintConfig": {
     "extends": [
       "react-app",
